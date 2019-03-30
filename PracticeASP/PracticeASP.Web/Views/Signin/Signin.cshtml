@@ -1,0 +1,77 @@
+﻿@model PracticeASP.Web.Models.UserRegister
+
+
+@{
+    ViewBag.Title = "Signin";
+}
+<header>
+    <nav role="navigation" class="navbar vesco-top-nav navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="vesco-naw-wrapper">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vsco-menu">
+                        <span class="sr-only">MENU</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                        <img src="~/Content/img/logo1.png" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="vsco-menu">
+                    <div id="vesco-menu">
+                        <ul class="nav navbar-nav">
+                            <li> @Html.ActionLink("ACASA", "Index", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- SEND MESSAGE -->
+<section id="message_form">
+    <div class="content-box fix">
+        <div class="content-title">
+            <br><br>
+            <h1>INREGISTRARE</h1>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <div class="col-md-12 fix">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        @using (Html.BeginForm())
+                        {
+                            <form>
+                                <div class="form-group">
+                                    <label>NUMELE</label>
+                                    <input class="form-control form-control-lg" type="text" name="Name" placeholder="Introdu numele">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>PRENUMELE</label>
+                                    <input class="form-control form-control-lg" type="text" name="Prenumele" placeholder="Introdu numele">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>ADRESA DE EMAIL</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" placeholder="Introdu email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>SELECTEAZA PAROLA</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="Password" placeholder="Introdu parola">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">INREGISTREAZA</button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

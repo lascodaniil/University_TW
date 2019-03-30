@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Article";
+}
+
+
+    <header>
+        <nav role="navigation" class="navbar vesco-top-nav navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="vesco-naw-wrapper">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vsco-menu">
+                            <span class="sr-only">MENU</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="@Url.Action("Index")">
+                            <img src="~/Content/img/logo1.png" />
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="vsco-menu">
+                        <div id="vesco-menu">
+                            <ul class="nav navbar-nav">
+                                <li> @Html.ActionLink("ACASA", "Index")</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEND MESSAGE -->
+    <section id="articol">
+        <div class="content-box ">
+            <div class="content-title">
+                <br><br>
+                <h1>TITLUL ARTICOLULUI NOSTRU</h1>
+                <div class="content-title-underline"></div>
+                <div class="container-fluid">
+                    <div class="col-md-8">
+                        <img src="~/Content/img/bg-about.jpg" />
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</html>

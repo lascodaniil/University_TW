@@ -1,0 +1,17 @@
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.BussinesLogic.dll
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.BussinesLogic.pdb
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.Domain.dll
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.Domain.pdb
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csprojAssemblyReference.cache
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.CoreCompileInputs.cache
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.CopyComplete
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.dll
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.pdb
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.BussinesLogic.dll.config
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\EntityFramework.dll
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.Domain.dll.config
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\EntityFramework.xml
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.Migrations.db.resources
+C:\Users\Daniil\Desktop\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.GenerateResource.cache

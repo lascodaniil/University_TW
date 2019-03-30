@@ -1,0 +1,307 @@
+html, body{
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto Condensed" , sans-serif;
+}
+
+h3{
+	color: 
+	text-transform: uppercase;
+}
+p{
+	color: #41464b;
+	font-size: 15px;
+	font-size: 300;
+}
+
+
+/*  HOME  */
+
+#home {
+	height: 100%;
+}
+
+#home-cover {
+	height: 100%;
+	background-image: url("../img/bg-home.jpg");
+	background-repeat : no-repeat;
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#home-content-box{
+	width: 100%;
+	height: 100%;
+	display: table;
+
+}
+
+#home-content-box-inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#home-heading h3{
+	color: #fff;
+	font-size: 55px;
+	font-weight: 700;
+	margin: 20px 0 20px 0;
+}
+
+
+
+
+/* EFECTUL PARALAX */
+.bg-parallax{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#home-heading,#home-cover, #home-btn{
+	animation-duration: .5s;
+}
+
+#home-btn{
+	animation-delay: 1s;
+}
+
+#home-heading{
+	animation-delay: .5s;
+}
+
+.content-box{
+	padding: 60px 0 60px 0;
+}
+
+.content-title h1{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.content-title h3{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: left;
+	margin: 0 0 30px 0;
+}
+
+.content-title h4{
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	margin: 0 0 30px 0;
+}
+
+.content-title img{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 25px;
+}
+
+
+.content-title-underline{
+	width: 30px;
+	height: 3px;
+	background-color: #34c6d3;
+	margin : 0 auto 30px auto;
+}
+
+.service-item{
+	padding: 20px 0 20px 0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.service-item {
+	padding: 20px 0 20px 0;
+	margin-bottom: 20px;
+	cursor: pointer;
+	float: left;
+}
+
+.service-item-icon i{
+	color: #2ecc71;
+	float:  left;
+	padding: 15px;
+	margin-right: 25px;
+	width: 75px;
+	text-align: center;
+}
+
+.service-item:hover .service-item-icon i{
+	color: #fff;
+	background-color: #2ecc71;
+}
+
+
+.service-item-title h3 {
+	font-size:20px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+	margin: 0;
+	padding-left: 85px;
+}
+
+#about-content-box{
+	float:  left;
+	height: 700px;
+}
+
+#about-content-box-outer{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+#about-content-box-inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#about .content-title h3{
+	text-align: left;
+}
+
+#about .content-title .content-title-underline{
+	margin: 0 0 30px 0;
+}
+
+#about-desc p{
+	margin-bottom: 30px;
+}
+
+#about-bg-diagonal{
+	width: 60%;
+	height: 700px;
+	float: right;
+	background-image: url(../img/image.jpg);
+	border-left: 200px solid #fff;
+	border-top: 700px solid transparent;
+}
+
+.no-gutters [class*=col-]{ /*  gen selecteaza toate obiectele care au ca clasa baza no-gutters*/
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.img-wrapper{
+	overflow: hidden;
+}
+
+.img-wrapper img:hover{
+	transform: scale(1.5);
+}
+
+.img-wrapper img{
+	transition: transform .5s ease;
+}
+
+.modificare_d{
+	padding: 30px 0 0px 0;
+}
+
+.text{
+	text-align: center;
+	font-size: 700;
+	color: #000;
+}
+
+.navbar{
+	padding: 20px 0;
+}
+
+.vesco-top-nav{
+	background: rgba(0,0,0,0.7);
+	padding: 7px 0;
+} 
+
+.vesco-nav-wrapper{
+	padding: 0 85px;
+}
+
+.navbar-nav{
+	float:right !important;
+}
+
+.navbar-nav > li > a{
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus {
+	background: none !important;
+	color: #2ecc71;
+}
+
+.navbar-toggle{
+	background-color: rgba(0,0,0,0.1)!important;
+	border: 1px solid #fff !important;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+
+.bavbar-collapse{
+	max-height: none !important;
+}
+
+.context form{
+	width: 50%;
+	float: right;
+	position: relative !important;
+}
+
+#message_form{
+	background-color: #f5f6fa;
+}
+
+.col-md-12 p {
+	float: left;
+	position: absolute !important;
+	padding-right: 68%; 
+	padding-top: 40px; 
+}
+
+
+.col-md-12 h3 {
+	float: left;
+	
+}
+.contact {
+	background-color: #fd6456;
+}
+
+
+#footer{
+	background-color:#333;
+	height: 15%;
+}
+
+#footer .col-md-12 p{
+	color:#fff;
+	text-align: center !important;
+}
+
+
+#section_signin form{
+	padding-top: 100 px; 
+	position: relative !important;
+	background-color: #fd6456;
+}
+#photo{
+	background-image: url("../img/bg-home.jpg");
+	
+}
+

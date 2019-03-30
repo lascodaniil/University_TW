@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+
+<header>
+    <nav role="navigation" class="navbar vesco-top-nav navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="vesco-naw-wrapper">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vsco-menu">
+                        <span class="sr-only">MENU</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                        <img src="~/Content/img/logo1.png" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="vsco-menu">
+                    <div id="vesco-menu">
+                        <ul class="nav navbar-nav">
+                            <li> @Html.ActionLink("ACASA", "Index","Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!-- SEND MESSAGE -->
+<section id="message_form">
+    <div class="content-box fix">
+        <div class="content-title">
+            <br><br>
+            <h1>AUTENTIFICARE</h1>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <div class="col-md-12 fix">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        @using (Html.BeginForm())
+                        {
+                            <form>
+                                <div class="form-group">
+                                    <label >Adresa de email</label>
+                                    <input class="form-control form-control-lg" type="email" name="Email" placeholder="Introdu e-mail">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Parola</label>
+                                        <input type="password" class="form-control form-control-lg" name ="Password" id="" placeholder="Introdu parola">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">LOG IN</button>
+                            </form>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
