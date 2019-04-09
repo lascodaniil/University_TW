@@ -200,6 +200,7 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Signin\Signin.cshtml" />
     <Content Include="Views\Login\Existing.cshtml" />
+    <Content Include="Views\Signin\Existing.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

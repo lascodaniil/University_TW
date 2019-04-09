@@ -9,17 +9,30 @@ namespace PracticeASP.BussinesLogic.Core
         internal bool UserAuth(UAuthData data)
         {
             var db = new TW_LABORATORIES();
-            var user = db.Users.FirstOrDefault(m => m.Email == data.Email &&  m.Password.Equals(data.Password));
+            
+            
+            var user = db.Users.FirstOrDefault(u => u.Email.Equals(data.Email)  &&  u.Password==data.Password);
             if(user !=null)
             {
                 return true;
             }
-            return true;
+            return false;
+            
         }
 
         internal bool UserRegistration(URegisterData data)
         {
-            return true;
+            var db = new TW_LABORATORIES();
+            var user = db.Users.FirstOrDefault(u => u.Email.Equals(data.Email));
+
+            if(user!=null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

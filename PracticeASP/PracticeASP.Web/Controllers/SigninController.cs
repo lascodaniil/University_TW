@@ -8,12 +8,15 @@ using PracticeASP.BussinesLogic.Interfaces;
 using PracticeASP.BussinesLogic;
 using PracticeASP.Domain.Entities;
 using PracticeASP.BussinesLogic.DBModels;
+using System.ComponentModel.DataAnnotations;
 
 namespace PracticeASP.Web.Controllers
 {
     public class SigninController : Controller
     {
+        public TW_LABORATORIES db = new TW_LABORATORIES();
         private readonly IUserInterface _session;
+        bool status;
         public SigninController()
         {
             var bussinesLogic = new MainBussinesLogic();
@@ -31,7 +34,6 @@ namespace PracticeASP.Web.Controllers
         public ActionResult Signin(UserRegister model)
         {
             var UData = new URegisterData();
-
             UData.Prenumele = model.Prenumele;
             UData.Name = model.Name;
             UData.Email = model.Email;
@@ -39,14 +41,19 @@ namespace PracticeASP.Web.Controllers
             UData.LastAuthDate = DateTime.Now;
             UData.IP_address = "192.168.0.1";
             
+            
             var session = _session.UserRegistrationAction(UData);
             if (session)
             {
-                var db = new TW_LABORATORIES();
+                // user inregistrat
+                return View("Existing" );
+            }
+            else
+            {
                 db.Users.Add(UData);
                 db.SaveChanges();
+                return RedirectToAction("Index", "Home");
             }
-           return View();
         }
     }
 }
