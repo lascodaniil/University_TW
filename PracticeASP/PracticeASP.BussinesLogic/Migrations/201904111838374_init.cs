@@ -3,7 +3,7 @@ namespace PracticeASP.BussinesLogic.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class db : DbMigration
+    public partial class init : DbMigration
     {
         public override void Up()
         {

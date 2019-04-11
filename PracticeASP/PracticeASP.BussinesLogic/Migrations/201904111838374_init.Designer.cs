@@ -7,13 +7,13 @@ namespace PracticeASP.BussinesLogic.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class db : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(db));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201903292206454_db"; }
+            get { return "201904111838374_init"; }
         }
         
         string IMigrationMetadata.Source

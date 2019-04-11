@@ -26,9 +26,9 @@ D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\PracticeASP.Dom
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\EntityFramework.xml
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\bin\Debug\EntityFramework.SqlServer.xml
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csprojAssemblyReference.cache
-D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.Migrations.db.resources
-D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.GenerateResource.cache
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.CoreCompileInputs.cache
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.CopyComplete
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.dll
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.pdb
+D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.Migrations.init.resources
+D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.GenerateResource.cache

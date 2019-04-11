@@ -23,7 +23,7 @@ namespace PracticeASP.BussinesLogic.Core
         internal bool UserRegistration(URegisterData data)
         {
             var db = new TW_LABORATORIES();
-            var user = db.Users.FirstOrDefault(u => u.Email.Equals(data.Email));
+           var user = db.Users.FirstOrDefault(u => u.Email.Equals(data.Email));
 
             if(user!=null)
             {

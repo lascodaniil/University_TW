@@ -33,20 +33,19 @@ namespace PracticeASP.Web.Controllers
         [HttpPost]
         public ActionResult Signin(UserRegister model)
         {
-            var UData = new URegisterData();
+            URegisterData UData = new URegisterData();
             UData.Prenumele = model.Prenumele;
             UData.Name = model.Name;
             UData.Email = model.Email;
             UData.Password = model.Password;
             UData.LastAuthDate = DateTime.Now;
             UData.IP_address = "192.168.0.1";
-            
-            
+
+
             var session = _session.UserRegistrationAction(UData);
             if (session)
             {
-                // user inregistrat
-                return View("Existing" );
+                return View("Existing");
             }
             else
             {

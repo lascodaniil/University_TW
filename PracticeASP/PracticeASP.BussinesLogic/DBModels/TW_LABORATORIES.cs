@@ -10,7 +10,8 @@ namespace PracticeASP.BussinesLogic.DBModels
 {
     public class TW_LABORATORIES : DbContext
     {
-        public TW_LABORATORIES() : base("name=DefaultConnection"){ }
+        public TW_LABORATORIES() : base("name=DefaultConnection"){
+        }
         public DbSet<URegisterData> Users { get; set; }
     }
 }
