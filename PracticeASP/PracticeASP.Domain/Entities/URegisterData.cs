@@ -16,5 +16,6 @@ namespace PracticeASP.Domain.Entities
         public string Password { get; set; }
         public string IP_address { get; set; }
         public DateTime LastAuthDate { get; set; }
+        public int RoleID { get; set; }
     }
 }

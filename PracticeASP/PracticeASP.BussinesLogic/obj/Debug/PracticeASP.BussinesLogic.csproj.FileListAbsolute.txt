@@ -32,3 +32,4 @@ D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.Bus
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.pdb
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.Migrations.init.resources
 D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.csproj.GenerateResource.cache
+D:\University_TW\PracticeASP\PracticeASP.BussinesLogic\obj\Debug\PracticeASP.BussinesLogic.Migrations.ini.resources

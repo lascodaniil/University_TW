@@ -40,7 +40,7 @@ namespace PracticeASP.Web.Controllers
             UData.Password = model.Password;
             UData.LastAuthDate = DateTime.Now;
             UData.IP_address = "192.168.0.1";
-
+            UData.RoleID = 1;
 
             var session = _session.UserRegistrationAction(UData);
             if (session)

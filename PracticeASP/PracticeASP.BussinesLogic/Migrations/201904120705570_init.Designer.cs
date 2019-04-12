@@ -13,7 +13,7 @@ namespace PracticeASP.BussinesLogic.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201904111838374_init"; }
+            get { return "201904120705570_init"; }
         }
         
         string IMigrationMetadata.Source
