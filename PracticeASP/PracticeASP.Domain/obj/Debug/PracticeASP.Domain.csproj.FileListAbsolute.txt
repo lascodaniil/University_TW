@@ -22,3 +22,15 @@ D:\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.csp
 D:\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.csproj.CopyComplete
 D:\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.dll
 D:\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.pdb
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\PracticeASP.Domain.dll.config
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\PracticeASP.Domain.dll
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\PracticeASP.Domain.pdb
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.csprojAssemblyReference.cache
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.csproj.CopyComplete
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.dll
+C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Domain\obj\Debug\PracticeASP.Domain.pdb

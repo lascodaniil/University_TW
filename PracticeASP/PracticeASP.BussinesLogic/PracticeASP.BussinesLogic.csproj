@@ -53,13 +53,13 @@
     <Compile Include="DBModels\TW_LABORATORIES.cs" />
     <Compile Include="Interfaces\IUserInterface.cs" />
     <Compile Include="MainBussinesLogic.cs" />
-    <Compile Include="Migrations\201904120705570_init.cs" />
-    <Compile Include="Migrations\201904120705570_init.Designer.cs">
-      <DependentUpon>201904120705570_init.cs</DependentUpon>
+    <Compile Include="Migrations\201904121122083_init1.cs" />
+    <Compile Include="Migrations\201904121122083_init1.Designer.cs">
+      <DependentUpon>201904121122083_init1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904120750410_ini.cs" />
-    <Compile Include="Migrations\201904120750410_ini.Designer.cs">
-      <DependentUpon>201904120750410_ini.cs</DependentUpon>
+    <Compile Include="Migrations\201904121123554_init.cs" />
+    <Compile Include="Migrations\201904121123554_init.Designer.cs">
+      <DependentUpon>201904121123554_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,11 +75,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904120705570_init.resx">
-      <DependentUpon>201904120705570_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904121122083_init1.resx">
+      <DependentUpon>201904121122083_init1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904120750410_ini.resx">
-      <DependentUpon>201904120750410_ini.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904121123554_init.resx">
+      <DependentUpon>201904121123554_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

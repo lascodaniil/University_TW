@@ -13,7 +13,8 @@ namespace PracticeASP.Web.Controllers
         {
             return View();
         }
-
+        
+        [HttpGet]
         public ActionResult Article()
         {
             return View();

@@ -31,21 +31,23 @@ namespace PracticeASP.Web.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Signin(UserRegister model)
         {
-            URegisterData UData = new URegisterData();
+            var UData = db.Users.Create();
+
             UData.Prenumele = model.Prenumele;
             UData.Name = model.Name;
             UData.Email = model.Email;
             UData.Password = model.Password;
             UData.LastAuthDate = DateTime.Now;
             UData.IP_address = "192.168.0.1";
-            UData.RoleID = 1;
+            UData.RoleID = 2;
 
             var session = _session.UserRegistrationAction(UData);
             if (session)
             {
-                return View("Existing");
+                return RedirectToAction("Index","Home");
             }
             else
             {

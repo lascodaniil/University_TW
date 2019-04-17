@@ -1,305 +1,329 @@
-﻿@{
-     ViewBag.Title = "Index";
+﻿
+@{
+    ViewBag.Title = "Index";
 }
 
 
 <header>
-     <nav role="navigation" class="navbar vesco-top-nav navbar-fixed-top">
-          <div class="container-fluid">
-               <div class="vesco-naw-wrapper">
-                    <div class="navbar-header">
-                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vsco-menu">
-                              <span class="sr-only">MENU</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                         </button>
-                         <a class="navbar-brand" href="#home">
-                              <img src="~/Content/img/logo1.png" />
-                         </a>
+    <nav role="navigation" class="navbar vesco-top-nav navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="vesco-naw-wrapper">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vsco-menu">
+                        <span class="sr-only">MENU</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">
+                        <img src="~/Content/img/logo1.png" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="vsco-menu">
+                    <div id="vesco-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#home">ACASA</a></li>
+                            <li><a href="#services">SERVICII</a></li>
+                            <li><a href="#about">DESPRE NOI</a></li>
+                            <li><a href="#work">PROIECTE</a></li>
+                            <li><a href="#articles">ARTICOLE</a></li>
+                            <li><a href="#message_form">CONTACTE</a></li>
+                            <li> @Html.ActionLink("SIGN IN", "Signin", "Signin")</li>
+                            <li> @Html.ActionLink("LOG IN", "Login", "Login")</li>
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+
+                                if (User.IsInRole("admin"))
+                                {
+                                    <li>@Html.ActionLink("ADMIN", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("CONTROL PANEL", "Index", "Panel")</li>
+                                }
+
+                                if (User.IsInRole("user"))
+                                {
+                                    <li>@Html.ActionLink("USER", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("ACCOUT", "Index1", "Panel")</li>
+                                }
+                            }
+
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li>@Html.ActionLink("Logout", "Logout", "Login")</li>
+
+                            }
+                        </ul>
                     </div>
-                    <div class="collapse navbar-collapse" id="vsco-menu">
-                         <div id="vesco-menu">
-                              <ul class="nav navbar-nav">
-                                   <li><a href="#home">ACASA</a></li>
-                                   <li><a href="#services">SERVICII</a></li>
-                                   <li><a href="#about">DESPRE NOI</a></li>
-                                   <li><a href="#work">PROIECTE</a></li>
-                                   <li><a href="#articles">ARTICOLE</a></li>
-                                   <li><a href="#message_form">CONTACTE</a></li>
-                                   <li> @Html.ActionLink("SIGN IN","Signin","Signin")</li>
-                                   <li> @Html.ActionLink("LOG IN", "Login","Login")</li>
-                              </ul>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
 <!-- HOME -->
 <section id="home">
-     <div id="home-cover" class="bg-parallax animated fadeIn">
-          <div id="home-content-box">
-               <div id="home-content-box-inner" class="text-center">
-                    <div id="home-heading" class="animated zoomIn">
-                         <h3>LOGISTICĂ ȘI CONTABILITATE</h3>
-                    </div>
-                    <br>
-                    <div id="home-btn">
-                         <a class="btn btn-primary" role="button" title="View Our Work">CLICK PENTRU DETALII</a>
-                    </div>
-               </div>
-          </div>
-     </div>
+    <div id="home-cover" class="bg-parallax animated fadeIn">
+        <div id="home-content-box">
+            <div id="home-content-box-inner" class="text-center">
+                <div id="home-heading" class="animated zoomIn">
+                    <h3>LOGISTICĂ ȘI CONTABILITATE</h3>
+                </div>
+                <br>
+                <div id="home-btn">
+                    <a class="btn btn-primary" role="button" title="View Our Work">CLICK PENTRU DETALII</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!--  Services -->
 <section id="services">
-     <div class="content-box">
-               <h1>SERVICII OFERITE</h1>
-               <div class="content-title-underline"></div>
-          </div>
+    <div class="content-box">
+        <h1>SERVICII OFERITE</h1>
+        <div class="content-title-underline"></div>
+    </div>
 
-          <div class="container">
-               <div class="row">
-                    <div class="col-md-4">
-                         <div class="service-item">
-                              <div class="service-item-icon">
-                                   <i class="fa fa-calendar fa-3x"></i>
-                              </div>
-                              <div class="service-item-title">
-                                   <h3>Consultanta</h3>
-                              </div>
-
-                              <div class="service-item-desc">
-                                   <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                   </p>
-                              </div>
-                         </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-item">
+                    <div class="service-item-icon">
+                        <i class="fa fa-calendar fa-3x"></i>
+                    </div>
+                    <div class="service-item-title">
+                        <h3>Consultanta</h3>
                     </div>
 
+                    <div class="service-item-desc">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="col-md-4">
-                         <div class="service-item">
-                              <div class="service-item-icon">
-                                   <i class="fa fa-cube fa-3x"></i>
-                              </div>
-                              <div class="service-item-title">
-                                   <h3>Programarii</h3>
-                              </div>
 
-                              <div class="service-item-desc">
-                                   <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                   </p>
-                              </div>
-                         </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <div class="service-item-icon">
+                        <i class="fa fa-cube fa-3x"></i>
+                    </div>
+                    <div class="service-item-title">
+                        <h3>Programarii</h3>
                     </div>
 
-
-                    <div class="col-md-4">
-                         <div class="service-item">
-                              <div class="service-item-icon">
-                                   <i class="fa fa-flag fa-3x"></i>
-                              </div>
-                              <div class="service-item-title">
-                                   <h3>Contabilitate</h3>
-                              </div>
-
-                              <div class="service-item-desc">
-                                   <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                   </p>
-                              </div>
-                         </div>
+                    <div class="service-item-desc">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
                     </div>
-               </div>
-          </div>
-     </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="service-item">
+                    <div class="service-item-icon">
+                        <i class="fa fa-flag fa-3x"></i>
+                    </div>
+                    <div class="service-item-title">
+                        <h3>Contabilitate</h3>
+                    </div>
+
+                    <div class="service-item-desc">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </section>
 
 
 <!--  About -->
 <section id="about">
 
-     <!-- About right side with diagonal BG parallax -->
-     <div id="about-bg-diagonal" class="bg-parallax">
-     </div>
+    <!-- About right side with diagonal BG parallax -->
+    <div id="about-bg-diagonal" class="bg-parallax">
+    </div>
 
-     <!-- About left side with content -->
-     <div class="container">
-          <div class="row">
-               <div class="col-md-4">
-                    <div id="about-content-box">
-                         <div id="about-content-box-outer">
-                              <div id="about-content-box-inner">
-                                   <div class="content-title">
-                                        <h3> DESPRE NOI </h3>
-                                        <div class="content-title-underline"></div>
-                                   </div>
+    <!-- About left side with content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="about-content-box">
+                    <div id="about-content-box-outer">
+                        <div id="about-content-box-inner">
+                            <div class="content-title">
+                                <h3> DESPRE NOI </h3>
+                                <div class="content-title-underline"></div>
+                            </div>
 
-                                   <div id="about-desc">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                                   </div>
+                            <div id="about-desc">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </div>
 
-                                   <div id="about-btn">
-                                        <a class="btn btn-primary" role="button" title="View Work">VEZI MAI MULT</a>
-                                   </div>
-                              </div>
-                         </div>
+                            <div id="about-btn">
+                                <a class="btn btn-primary" role="button" title="View Work">VEZI MAI MULT</a>
+                            </div>
+                        </div>
                     </div>
-               </div>
-          </div>
-     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!--  Work -->
 <section id="work">
-     <div class="content-box ">
-          <div class="content-title">
-               <h1>PROIECTE FINISATE</h1>
-               <div class="content-title-underline"></div>
-               <p class="text">Descriere de adaugat la aceasta</p>
-          </div>
+    <div class="content-box ">
+        <div class="content-title">
+            <h1>PROIECTE FINISATE</h1>
+            <div class="content-title-underline"></div>
+            <p class="text">Descriere de adaugat la aceasta</p>
+        </div>
 
-          <div class="container-fluid">
-               <div class="row no-gutters">
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/1.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/1.jpg" class="img-responsive" alt="Work">
-                         </div>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/1.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/1.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/2.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/2.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/2.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/2.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/3.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/3.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/3.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/3.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/4.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/4.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/4.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/4.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/5.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/5.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/5.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/5.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/6.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/6.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/6.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/6.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/7.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/7.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/7.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/7.jpg" class="img-responsive" alt="Work">
                     </div>
-                    <div class="col-md-3">
-                         <div class="img-wrapper">
-                              <a href="~/Content/img/work/8.jpg" title="img1"></a>
-                              <img src="~/Content/img/work/8.jpg" class="img-responsive" alt="Work">
-                         </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="img-wrapper">
+                        <a href="~/Content/img/work/8.jpg" title="img1"></a>
+                        <img src="~/Content/img/work/8.jpg" class="img-responsive" alt="Work">
                     </div>
+                </div>
 
-               </div>
-          </div>
-     </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- Articles -->
 <section id="articles">
-     <div class="content-box ">
-          <div class="content-title">
-               <h1>NOUTĂȚII</h1>
-               <div class="content-title-underline"></div>
-               <div class="container">
-                    <br><br><br><br>
-                    <div class="row">
-                         <div class="col-md-4">
-                              <h4 class="content-title">TITLUL ARTICOLULUI NOSTRU</h4>
-                              <img src="~/Content/img/bg-about.jpg" />
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                              <a class="btn btn-primary" href="@Url.Action("Article")" role="button">Link</a>
-                         </div>
-
-                         <div class="col-md-4">
-                              <h4 class="content-title">TITLUL ARTICOLULUI NOSTRU</h4>
-                              <img src="~/Content/img/bg-about.jpg" />
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                              <a class="btn btn-primary" href="@Url.Action("Article")" role="button">Link</a>
-                         </div>
-                         <div class="col-md-4">
-                              <h4 class="content-title">TITLUL ARTICOLULUI NOSTRU</h4>
-                              <img src="~/Content/img/bg-about.jpg" />
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                              <a class="btn btn-primary" href="@Url.Action("Article")" role="button">Link</a>
-                          </div>
+    <div class="content-box ">
+        <div class="content-title">
+            <h1>NOUTĂȚII</h1>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="content-title">TITLUL ARTICOLULUI NOSTRU</h4>
+                        <img src="~/Content/img/bg-about.jpg" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <a class="btn btn-primary" href="@Url.Action("Article")" role="button">Link</a>
                     </div>
-               </div>
-          </div>
-     </div>
+
+                    <div class="col-md-4">
+                        <h4 class="content-title">TITLUL ARTICOLULUI NOSTRU</h4>
+                        <img src="~/Content/img/bg-about.jpg" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <a class="btn btn-primary" href="@Url.Action("Article")" role="button">Link</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="content-title">TITLUL ARTICOLULUI NOSTRU</h4>
+                        <img src="~/Content/img/bg-about.jpg" />
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <a class="btn btn-primary" href="@Url.Action("Article")" role="button">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- SEND MESSAGE -->
 <section id="message_form">
-     <div class="content-box ">
-          <div class="content-title">
-               <h1>EXPEDIERE MESAJ</h1>
-               <div class="content-title-underline"></div>
-               <div class="container">
-                    <div class="col-md-12 context">
-                         <h3>Forma de contact</h3>
-                         <p>
-                              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                              It has survived not only five centuries, but also the leap into electronic typesetting,
-                              remaining essentially unchanged.
-                         </p>
+    <div class="content-box ">
+        <div class="content-title">
+            <h1>EXPEDIERE MESAJ</h1>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <div class="col-md-12 context">
+                    <h3>Forma de contact</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
 
-                         <form>
-                              <div class="form-group">
-                                   <!-- Name field -->
-                                   <label class="control-label " for="name">Nume</label>
-                                   <input class="form-control" id="name" name="name" type="text" />
-                              </div>
+                    <form>
+                        <div class="form-group">
+                            <!-- Name field -->
+                            <label class="control-label " for="name">Nume</label>
+                            <input class="form-control" id="name" name="name" type="text" />
+                        </div>
 
-                              <div class="form-group">
-                                   <!-- Email field -->
-                                   <label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
-                                   <input class="form-control" id="email" name="email" type="text" />
-                              </div>
+                        <div class="form-group">
+                            <!-- Email field -->
+                            <label class="control-label requiredField" for="email">Email<span class="asteriskField">*</span></label>
+                            <input class="form-control" id="email" name="email" type="text" />
+                        </div>
 
-                              <div class="form-group">
-                                   <!-- Subject field -->
-                                   <label class="control-label " for="subject">Subiectul</label>
-                                   <input class="form-control" id="subject" name="subject" type="text" />
-                              </div>
+                        <div class="form-group">
+                            <!-- Subject field -->
+                            <label class="control-label " for="subject">Subiectul</label>
+                            <input class="form-control" id="subject" name="subject" type="text" />
+                        </div>
 
-                              <div class="form-group">
-                                   <!-- Message field -->
-                                   <label class="control-label " for="message">Mesajul</label>
-                                   <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
-                              </div>
+                        <div class="form-group">
+                            <!-- Message field -->
+                            <label class="control-label " for="message">Mesajul</label>
+                            <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                        </div>
 
-                              <div class="form-group">
-                                   <button class="btn btn-primary " name="submit" type="submit">TRIMITE</button>
-                              </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary " name="submit" type="submit">TRIMITE</button>
+                        </div>
 
-                         </form>
-                    </div>
-               </div>
-          </div>
-     </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PracticeASP.Domain.Entities.URegisterData>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container">
+    <div class="col-md-12">
+        <table class="table">
+            </br></br></br>
+            <thead>
+                <tr>
+                    <th scope="col">Nume</th>
+                    <th scope="col">Prenume</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">LastAuthDate</th>
+                    <th scope="col">IP Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var m in Model)
+                {
+                    <tr>
+                        <td>@m.Name</td>
+                        <td>@m.Prenumele</td>
+                        <td>@m.Email</td>
+                        <td>@m.Password</td>
+                        <td>@m.LastAuthDate</td>
+                        <td>@m.IP_address</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br /><br /><br />
+    </div>
+</div>

@@ -4,7 +4,7 @@ using PracticeASP.Domain.Entities;
 using PracticeASP.Web.Models;
 using System;
 using System.Web.Mvc;
-
+using System.Web.Security;
 
 namespace PracticeASP.Web.Controllers
 {
@@ -12,10 +12,20 @@ namespace PracticeASP.Web.Controllers
     {
         private readonly IUserInterface _session;
         bool status;
+        public static UserLogin general = new UserLogin();
         public LoginController()
         {
             var bussinesLogic = new MainBussinesLogic();
             _session = bussinesLogic.GetUserSessionBL();
+        }
+
+
+        [HttpGet]
+        [Authorize]
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
@@ -37,9 +47,11 @@ namespace PracticeASP.Web.Controllers
                 status = _session.UserAuthentificationAction(_user);
             }
 
+            FormsAuthentication.SetAuthCookie(model.Email, false);
             if (status)
             {
-                return View("Existing");
+                general = model;
+                return RedirectToAction("Index", "Home");
             }
             else
             {

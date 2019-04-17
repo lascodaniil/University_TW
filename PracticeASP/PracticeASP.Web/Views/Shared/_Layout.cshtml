@@ -12,11 +12,35 @@
 
      @Styles.Render("~/bootstrap/Content/css")
 
-
 </head>
 <body>
 
     @RenderBody()
+
+    @*if (User.Identity.IsAuthenticated)
+        {
+
+            if (User.IsInRole("admin"))
+            {
+                @Html.ActionLink("ADMIN", "Index", "Home")
+            }
+
+            if (User.IsInRole("user"))
+            {
+                @Html.ActionLink("USER", "Index", "Home")
+            }
+        }
+
+
+        @if (User.Identity.IsAuthenticated)
+        {
+
+            @Html.ActionLink("Logout", "Logout", "Login")
+
+        }
+    *@
+
+
     <section id="footer">
         <div class="col-md-12">
             <p>Copyrights &copy;2019 Lasco Daniil</p>

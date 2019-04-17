@@ -45,6 +45,8 @@
                     <div class="col-md-4">
                         @using (Html.BeginForm())
                         {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary()
                             <form>
                                 <div class="form-group">
                                     <label>NUMELE</label>
