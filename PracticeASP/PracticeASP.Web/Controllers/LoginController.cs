@@ -42,8 +42,6 @@ namespace PracticeASP.Web.Controllers
                 var _user = new UAuthData();
                 _user.Email = model.Email;
                 _user.Password = model.Password;
-                _user.LastAuthDate = DateTime.Now;
-                _user.IP_address = "192.168.0.1";
                 status = _session.UserAuthentificationAction(_user);
             }
 

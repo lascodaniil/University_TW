@@ -11,7 +11,7 @@ namespace PracticeASP.BussinesLogic.Core
             var db = new TW_LABORATORIES();
             
             
-            var user = db.Users.FirstOrDefault(u => u.Email.Equals(data.Email)  &&  u.Password==data.Password);
+            var user = db.Users.FirstOrDefault(u => u.Email.Equals(data.Email));
             if(user !=null)
             {
                 return true;

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using PracticeASP.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 
 namespace PracticeASP.Web.Controllers
 {
@@ -19,5 +21,22 @@ namespace PracticeASP.Web.Controllers
         {
             return View();
         }
+
+
+        [HttpGet]
+        public ActionResult APIView()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult APIView(UserRegister userRegister)
+        {
+            return View();
+        }
+
+
+
+
     }
 }

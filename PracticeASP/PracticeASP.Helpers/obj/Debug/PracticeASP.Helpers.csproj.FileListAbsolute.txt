@@ -52,3 +52,39 @@ C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Helpers\obj\
 C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csproj.CopyComplete
 C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.dll
 C:\Users\Daniil Lasco\Desktop\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.pdb
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Helpers.dll.config
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Helpers.dll
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Helpers.pdb
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.dll
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.BussinesLogic.dll
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Domain.dll
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.BussinesLogic.pdb
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.BussinesLogic.dll.config
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Domain.pdb
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Domain.dll.config
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.xml
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csprojAssemblyReference.cache
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csproj.CoreCompileInputs.cache
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csproj.CopyComplete
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.dll
+D:\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.pdb
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Helpers.dll.config
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Helpers.dll
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Helpers.pdb
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.dll
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.BussinesLogic.dll
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Domain.dll
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.BussinesLogic.pdb
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.BussinesLogic.dll.config
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Domain.pdb
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\PracticeASP.Domain.dll.config
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.xml
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csprojAssemblyReference.cache
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.csproj.CopyComplete
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.dll
+C:\Users\Daniil Lasco\Desktop\Final_TW\University_TW\PracticeASP\PracticeASP.Helpers\obj\Debug\PracticeASP.Helpers.pdb

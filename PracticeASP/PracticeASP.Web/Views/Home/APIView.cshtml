@@ -1,0 +1,45 @@
+﻿<!-- SEND MESSAGE -->
+<section id="message_form">
+    <div class="content-box fix">
+        <div class="content-title">
+            <br><br>
+            <h1>INREGISTRARE</h1>
+            <div class="content-title-underline"></div>
+            <div class="container">
+                <div class="col-md-12 fix">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        @using (Html.BeginForm("CreateURegister","api/WebAPI",FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary()
+                            <form>
+                                <div class="form-group">
+                                    <label>NUMELE</label>
+                                    <input class="form-control form-control-lg" type="text" id="name" name="Name" placeholder="Introdu numele">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>PRENUMELE</label>
+                                    <input class="form-control form-control-lg" type="text" id="prenume" name="Prenumele" placeholder="Introdu numele">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>ADRESA DE EMAIL</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp" placeholder="Introdu email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>SELECTEAZA PAROLA</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="Password" placeholder="Introdu parola">
+                                </div>
+
+                                <button type="submit" id="check" class="btn btn-primary">INREGISTREAZA</button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

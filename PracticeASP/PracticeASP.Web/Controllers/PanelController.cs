@@ -25,7 +25,7 @@ namespace PracticeASP.Web.Controllers
         [Authorize(Roles = "user")]
         public ActionResult Index1()
         {
-            URegisterData user;
+            URegisterData user= new URegisterData();
             user = db.Users.FirstOrDefault(x =>x.Email == LoginController.general.Email);
             if (user!=null)
             {

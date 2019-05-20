@@ -8,16 +8,19 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Optimization;
 using PracticeASP.Web.App_Start;
-
+using System.Web.Http;
 
 namespace PracticeASP.Web
 {
     public class Global : HttpApplication
     {
+        public object FilterConfig { get; private set; }
+
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
-          // FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+           GlobalConfiguration.Configure(WebApiConfig.Register);
            AreaRegistration.RegisterAllAreas();
            RouteConfig.RegisterRoutes(RouteTable.Routes);
            BundleConfig.RegisterBundles(BundleTable.Bundles);

@@ -14,5 +14,6 @@ namespace PracticeASP.BussinesLogic.DBModels
         }
         public DbSet<URegisterData> Users { get; set; }
         public DbSet<Roles> Roles { get; set; }
+        public object User { get; set; }
     }
 }

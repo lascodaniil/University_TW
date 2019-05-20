@@ -9,6 +9,7 @@ using PracticeASP.BussinesLogic;
 using PracticeASP.Domain.Entities;
 using PracticeASP.BussinesLogic.DBModels;
 using System.ComponentModel.DataAnnotations;
+using PracticeASP.Helpers;
 
 namespace PracticeASP.Web.Controllers
 {
@@ -39,9 +40,9 @@ namespace PracticeASP.Web.Controllers
             UData.Prenumele = model.Prenumele;
             UData.Name = model.Name;
             UData.Email = model.Email;
-            UData.Password = model.Password;
+            UData.Password = LoginHelper.HashGen(model.Password);
             UData.LastAuthDate = DateTime.Now;
-            UData.IP_address = "192.168.0.1";
+            UData.IP_address = Request.UserHostAddress; 
             UData.RoleID = 2;
 
             var session = _session.UserRegistrationAction(UData);
