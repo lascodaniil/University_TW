@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeASP.Web", "PracticeASP.Web\PracticeASP.Web.csproj", "{7F3B15B1-AFA2-4999-B6CD-4F829A2B3E27}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeASP.BussinesLogic", "PracticeASP.BussinesLogic\PracticeASP.BussinesLogic.csproj", "{7EEFAAD6-E8D7-4A51-8739-57C42BB0BC44}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeASP.Helpers", "PracticeASP.Helpers\PracticeASP.Helpers.csproj", "{927BEB2B-7809-41D6-B02D-F1D7734A63D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingLog", "TestingLog\TestingLog.csproj", "{C7B71803-C351-476F-A079-2F487C395893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{927BEB2B-7809-41D6-B02D-F1D7734A63D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{927BEB2B-7809-41D6-B02D-F1D7734A63D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{927BEB2B-7809-41D6-B02D-F1D7734A63D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B71803-C351-476F-A079-2F487C395893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B71803-C351-476F-A079-2F487C395893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B71803-C351-476F-A079-2F487C395893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B71803-C351-476F-A079-2F487C395893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

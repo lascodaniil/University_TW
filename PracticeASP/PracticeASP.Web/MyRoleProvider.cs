@@ -25,7 +25,6 @@ namespace PracticeASP.Web
             return raspuns;
         }
 
-
         public override string Name => base.Name;
         public override string Description => base.Description;
 

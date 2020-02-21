@@ -53,13 +53,9 @@
     <Compile Include="DBModels\TW_LABORATORIES.cs" />
     <Compile Include="Interfaces\IUserInterface.cs" />
     <Compile Include="MainBussinesLogic.cs" />
-    <Compile Include="Migrations\201904121122083_init1.cs" />
-    <Compile Include="Migrations\201904121122083_init1.Designer.cs">
-      <DependentUpon>201904121122083_init1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904121123554_init.cs" />
-    <Compile Include="Migrations\201904121123554_init.Designer.cs">
-      <DependentUpon>201904121123554_init.cs</DependentUpon>
+    <Compile Include="Migrations\202002201941077_Init.cs" />
+    <Compile Include="Migrations\202002201941077_Init.Designer.cs">
+      <DependentUpon>202002201941077_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,14 +73,6 @@
     <None Include="Scripts\jquery-3.4.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904121122083_init1.resx">
-      <DependentUpon>201904121122083_init1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904121123554_init.resx">
-      <DependentUpon>201904121123554_init.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -92,6 +80,11 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\knockout-3.5.0.debug.js" />
     <Content Include="Scripts\knockout-3.5.0.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002201941077_Init.resx">
+      <DependentUpon>202002201941077_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
