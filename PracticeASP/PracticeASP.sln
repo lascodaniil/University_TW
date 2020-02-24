@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeASP.BussinesLogic",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeASP.Helpers", "PracticeASP.Helpers\PracticeASP.Helpers.csproj", "{927BEB2B-7809-41D6-B02D-F1D7734A63D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingLog", "TestingLog\TestingLog.csproj", "{C7B71803-C351-476F-A079-2F487C395893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingLog", "TestingLog\TestingLog.csproj", "{C7B71803-C351-476F-A079-2F487C395893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
